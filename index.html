@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Digital - Android Apps</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0F172A;
+      color: #E2E8F0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .container { max-width: 600px; text-align: center; }
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #6366F1, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .subtitle { color: #94A3B8; font-size: 1.1rem; margin-bottom: 32px; }
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .app {
+      background: #1E293B;
+      border-radius: 12px;
+      padding: 16px 12px;
+      transition: transform 0.2s;
+    }
+    .app:hover { transform: translateY(-2px); }
+    .app-name { font-weight: 600; font-size: 0.95rem; }
+    .app-desc { color: #94A3B8; font-size: 0.8rem; margin-top: 4px; }
+    .store-link {
+      display: inline-block;
+      background: #6366F1;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .store-link:hover { background: #4F46E5; }
+    footer { margin-top: 48px; color: #64748B; font-size: 0.8rem; }
+    footer a { color: #94A3B8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RS Digital</h1>
+    <p class="subtitle">Android Apps mit Avalonia</p>
+
+    <div class="apps">
+      <div class="app">
+        <div class="app-name">BomberBlast</div>
+        <div class="app-desc">Bomberman-Klon</div>
+      </div>
+      <div class="app">
+        <div class="app-name">HandwerkerImperium</div>
+        <div class="app-desc">Idle-Game</div>
+      </div>
+      <div class="app">
+        <div class="app-name">WorkTimePro</div>
+        <div class="app-desc">Arbeitszeiterfassung</div>
+      </div>
+      <div class="app">
+        <div class="app-name">FinanzRechner</div>
+        <div class="app-desc">Finanzrechner</div>
+      </div>
+      <div class="app">
+        <div class="app-name">FitnessRechner</div>
+        <div class="app-desc">BMI &amp; Kalorien</div>
+      </div>
+      <div class="app">
+        <div class="app-name">HandwerkerRechner</div>
+        <div class="app-desc">Bau-Rechner</div>
+      </div>
+      <div class="app">
+        <div class="app-name">RechnerPlus</div>
+        <div class="app-desc">Taschenrechner</div>
+      </div>
+      <div class="app">
+        <div class="app-name">ZeitManager</div>
+        <div class="app-desc">Timer &amp; Stoppuhr</div>
+      </div>
+    </div>
+
+    <a class="store-link" href="https://play.google.com/store/apps/developer?id=RS+Digital">
+      Alle Apps im Play Store
+    </a>
+
+    <footer>
+      <p>&copy; 2026 RS Digital</p>
+      <p><a href="mailto:kontakt@rsdigital.dev">Kontakt</a></p>
+    </footer>
+  </div>
+</body>
+</html>
