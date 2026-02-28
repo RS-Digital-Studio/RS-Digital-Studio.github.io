@@ -22,8 +22,8 @@
   </style>
   <script>
     function toggleLang() {
-      document.querySelectorAll('.section-de').forEach(e => e.style.display = e.style.display === 'none' ? 'block' : 'none');
-      document.querySelectorAll('.section-en').forEach(e => e.style.display = e.style.display === 'none' ? 'block' : 'none');
+      document.querySelectorAll('.section-de').forEach(e => e.style.display = getComputedStyle(e).display === 'none' ? 'block' : 'none');
+      document.querySelectorAll('.section-en').forEach(e => e.style.display = getComputedStyle(e).display === 'none' ? 'block' : 'none');
     }
   </script>
 </head>
@@ -37,7 +37,7 @@
       <p class="meta">BomberBlast (org.rsdigital.bomberblast) &mdash; RS Digital &mdash; Stand: 26. Februar 2026</p>
 
       <h2>1. Verantwortlicher</h2>
-      <p>RS Digital<br>E-Mail: <a href="mailto:info@rs-digital.org">kontakt@rsdigital.dev</a></p>
+      <p>RS Digital<br>E-Mail: <a href="mailto:info@rs-digital.org">info@rs-digital.org</a></p>
 
       <h2>2. Datenerhebung</h2>
       <p>BomberBlast erhebt <strong>keine personenbezogenen Daten</strong> direkt. Alle Spielfortschritte werden ausschließlich lokal auf Ihrem Gerät gespeichert und niemals an einen Server übertragen.</p>
